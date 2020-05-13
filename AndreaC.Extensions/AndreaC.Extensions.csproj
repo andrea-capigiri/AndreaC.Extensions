@@ -17,9 +17,14 @@ For example you got this path "C:\my_existing_file.txt" and you get this "C:\my_
     <PackageTags>Path, File, Directory</PackageTags>
     <RepositoryUrl>https://github.com/andrea-capigiri/AndreaC.Extensions</RepositoryUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="App_Data\icon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
