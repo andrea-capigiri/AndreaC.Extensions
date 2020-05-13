@@ -16,12 +16,13 @@ namespace AndreaC.Extensions
             string filename = Path.GetFileName(path);
             var match = Regex.Match(filename, @"\((?<i>[\d]+)\)");
             if (match.Success &&
-                match.Groups.TryGetValue("i", out Group iGrp) &&
-                iGrp != null &&
-                int.TryParse(iGrp.Value, out int i))
+                match.Groups != null &&
+                match.Groups.Count > 0 &&
+                match.Groups["i"] != null &&
+                int.TryParse(match.Groups["i"].Value, out int i))
             {
-                filename = filename.Remove(iGrp.Index, iGrp.Length);
-                filename = filename.Insert(iGrp.Index, (i + 1).ToString());
+                filename = filename.Remove(match.Groups["i"].Index, match.Groups["i"].Length);
+                filename = filename.Insert(match.Groups["i"].Index, (i + 1).ToString());
             }
             else filename = $"{Path.GetFileNameWithoutExtension(path)} (1){Path.GetExtension(path)}";
             return GetAvailableFileName(Path.Combine(Path.GetDirectoryName(path), filename));
