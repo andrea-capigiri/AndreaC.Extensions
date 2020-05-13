@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Company></Company>
     <PackageProjectUrl>https://andreacapigiri.com</PackageProjectUrl>
@@ -15,6 +15,15 @@ Use PathExtension.GetAvailableFileName to get the next available file name in th
 
 For example you got this path "C:\my_existing_file.txt" and you get this "C:\my_existing_file (1).txt"</Description>
     <PackageTags>Path, File, Directory</PackageTags>
+    <RepositoryUrl>https://github.com/andrea-capigiri/AndreaC.Extensions</RepositoryUrl>
+    <PackageLicenseExpression></PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="App_Data\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
