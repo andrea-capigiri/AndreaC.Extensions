@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company></Company>
+    <PackageProjectUrl>https://andreacapigiri.com</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageId>PathExtension.GetAvailableFileName</PackageId>
+    <Authors>Andrea Capigiri</Authors>
+    <Product>AndreaC.Extensions</Product>
+    <Description>Current path is not available on filesystem? No problem.
+
+Use PathExtension.GetAvailableFileName to get the next available file name in that directory. No more conflict on saving or moving files between into directories!
+
+For example you got this path "C:\my_existing_file.txt" and you get this "C:\my_existing_file (1).txt"</Description>
+    <PackageTags>Path, File, Directory</PackageTags>
+  </PropertyGroup>
+
+</Project>
