@@ -18,6 +18,7 @@ For example you got this path "C:\my_existing_file.txt" and you get this "C:\my_
     <RepositoryUrl>https://github.com/andrea-capigiri/AndreaC.Extensions</RepositoryUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
