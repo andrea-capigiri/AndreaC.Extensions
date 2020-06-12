@@ -6,9 +6,9 @@ using System.Text.RegularExpressions;
 
 namespace AndreaC.Extensions
 {
-    public partial class PathExtension
+    public static partial class PathExtension
     {
-        private static string GetAvailableFileName(string path)
+        public static string GetAvailableFileName(string path)
         {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentNullException("Path cannot be null");
             if (File.Exists(path) == false) return path;

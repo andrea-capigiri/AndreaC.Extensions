@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Company></Company>
     <PackageProjectUrl>https://andreacapigiri.com</PackageProjectUrl>
     <PackageIcon>icon.png</PackageIcon>
@@ -18,7 +18,9 @@ For example you got this path "C:\my_existing_file.txt" and you get this "C:\my_
     <RepositoryUrl>https://github.com/andrea-capigiri/AndreaC.Extensions</RepositoryUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
